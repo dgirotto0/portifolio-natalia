@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portifólio de Natália Thompson, Estilista" />
+    <meta name="author" content="Natália Thompson" />
+    <meta property="og:description" content="Portifólio de Natália Thompson, Estilista" />
+    <meta property="og:image" content="./assets/images/imagem-de-lucyan-vestindo-camisa-social-branca-e-sorrindo-com-plantas-no-fundo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="moda, estilista, design, roupas, estilo, vestuário, criatividade,  costura, modelagem" />
+    <meta name="robots" content="index" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <title>Natália // Portifólio</title>
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a class="logo close" href="#home"> Natália Thompson </a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a id="aboutNav" class="close" href="#about">Sobre mim</a>
+            </li>
+            <li>
+              <a id="projectsNav" class="close" href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a id="knowledgeNav" class="close" href="#knowledge"
+                >Conhecimentos</a
+              >
+            </li>
+            <li>
+              <a id="contactNav" class="close" href="#contact">Fale comigo</a>
+            </li>
+          </ul>
+
+          <ul class="language-menu">
+            <li>
+              <button class="language-button active" data-lang="pt-BR"> 
+                <img src="./assets/icons/brasil.png" alt="Bandeira do Brasil">
+              </button>
+            </li>
+            <li>
+              <button class="language-button" data-lang="en"> 
+                <img src="./assets/icons/reino-unido.png" alt="Bandeira da Inglaterra">
+              </button>
+            </li>
+          </ul>
+
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://instagram.com/nah_thompson"
+                title="Instagram"
+                target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/natália-thompson-821690314"
+                title="LinkedIn"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                    fill="rgba(255,255,255,1)"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu open"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu close"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Olá 👋🏾</h4>
+            <h1>Eu sou a Natália,</h1>
+          </header>
+          <div class="content">
+            <p class="line typing"></p>
+            <a class="button" href="#contact"> Fale comigo </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="assets/images/notebook.png"
+            alt="Imagem de um notebook."
+            id="notebook-1"
+          />
+          <img
+            src="assets/images/notebook-2.png"
+            alt="Imagem de um notebook com tela quebrada"
+            id="notebook-2"
+          />
+          <img
+            src="assets/images/notebook-2-white.png"
+            alt="Imagem de um notebook com tela quebrada"
+            id="notebook-2-white"
+          />
+          <img
+            src="./assets/images/vidro.png"
+            alt="Imagem de estilhaços de vidro com os ícones de HTML5, CSS3 e JavaScript por cima."
+            id="vidro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Sobre mim</h2>
+          </header>
+          <div class="content">
+            <p>
+              Sou Natalia, uma jovem apaixonada por moda e no segundo ano do curso, onde me dedico com entusiasmo à criação e à técnica.  
+              Minhas notas máximas em modelagem refletem meu talento natural para transformar ideias em peças incríveis.
+              A busca por conhecimento é constante, sempre explorando novas técnicas e aprimorando minhas habilidades.                 
+              Minha paixão transcende o âmbito acadêmico,  participando de projetos sociais onde a moda se torna ferramenta de transformação.  
+              Essa experiência me molda como profissional,  impulsionando meu crescimento e  me  preparando para construir uma carreira promissora no mundo da moda.
+            </p>
+            <a class="button" href="assets/files/curriculo.pdf" target="_blank">Veja meu currículo</a>
+          </div>
+        </div>
+        <div class="col-b">
+          <img src="./assets/images/perfil-na.png" alt="Foto de perfil da Natália"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projetos</h2>
+      <div class="gallery wrapper">
+        <div class="project">
+          <h3 class="project-title">Maquete</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/maquete1.jpg"><img src="./assets/images/fashion/maquete1.jpg" alt="Maquete - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/maquete2.jpg"><img src="./assets/images/fashion/maquete2.jpg" alt="Maquete - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/maquete3.jpg"><img src="./assets/images/fashion/maquete3.jpg" alt="Maquete - Imagem 3" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Mãos e Pés</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/desenho1.jpg"><img src="./assets/images/fashion/desenho1.jpg" alt="Mãos e pés - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho2.jpg"><img src="./assets/images/fashion/desenho2.jpg" alt="Mãos e pés - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho3.jpg"><img src="./assets/images/fashion/desenho3.jpg" alt="Mãos e pés - Imagem 3" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho4.jpg"><img src="./assets/images/fashion/desenho4.jpg" alt="Mãos e pés - Imagem 4" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho5.jpg"><img src="./assets/images/fashion/desenho5.jpg" alt="Mãos e pés - Imagem 5" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho6.jpg"><img src="./assets/images/fashion/desenho6.jpg" alt="Mãos e pés - Imagem 6" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho7.jpg"><img src="./assets/images/fashion/desenho7.jpg" alt="Mãos e pés - Imagem 7" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Avental</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/avental1.jpg"><img src="./assets/images/fashion/avental1.jpg" alt="Avental - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/avental2.jpg"><img src="./assets/images/fashion/avental2.jpg" alt="Avental - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/avental3.jpg"><img src="./assets/images/fashion/avental3.jpg" alt="Avental - Imagem 3" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/avental4.jpg"><img src="./assets/images/fashion/avental4.jpg" alt="Avental - Imagem 4" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Modelagem</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/modelagem1.jpg"><img src="./assets/images/fashion/modelagem1.jpg" alt="Modelagem - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem2.jpg"><img src="./assets/images/fashion/modelagem2.jpg" alt="Modelagem - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem3.jpg"><img src="./assets/images/fashion/modelagem3.jpg" alt="Modelagem - Imagem 3" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem4.jpg"><img src="./assets/images/fashion/modelagem4.jpg" alt="Modelagem - Imagem 4" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem5.jpg"><img src="./assets/images/fashion/modelagem5.jpg" alt="Modelagem - Imagem 5" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem6.jpg"><img src="./assets/images/fashion/modelagem6.jpg" alt="Modelagem - Imagem 6" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/modelagem7.jpg"><img src="./assets/images/fashion/modelagem7.jpg" alt="Modelagem - Imagem 7" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Vestido de Papel</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/vestido-papel1.jpg"><img src="./assets/images/fashion/vestido-papel1.jpg" alt="Vestido de Papel - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/vestido-papel2.jpg"><img src="./assets/images/fashion/vestido-papel2.jpg" alt="Vestido de Papel - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/vestido-papel3.jpg"><img src="./assets/images/fashion/vestido-papel3.jpg" alt="Vestido de Papel - Imagem 3" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/vestido-papel4.jpg"><img src="./assets/images/fashion/vestido-papel4.jpg" alt="Vestido de Papel - Imagem 4" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/vestido-papel5.jpg"><img src="./assets/images/fashion/vestido-papel5.jpg" alt="Vestido de Papel - Imagem 5" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Desenhos</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/desenho-expressivo.jpg"><img src="./assets/images/fashion/desenho-expressivo.jpg" alt="Desenho Expressivo - Imagem 1" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/desenho-observacao.jpg"><img src="./assets/images/fashion/desenho-observacao.jpg" alt="Desenho de Obsevação - Imagem 2" /></li>
+              <li class="abrirModal" parametro="./assets/images/fashion/silhueta.jpg"><img src="./assets/images/fashion/silhueta.jpg" alt="Silhueta - Imagem 1" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-title">Ficha Técnica</h3>
+          <div class="work">
+            <ul class="img-wrapper">
+              <li class="is-selected abrirModal" parametro="./assets/images/fashion/ficha-tecnica1.png"><img src="./assets/images/fashion/ficha-tecnica1.png" alt="Ficha Técnica - Imagem 1" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div id="imageModal" class="image-modal">
+      <span class="prev-modal">❮</span>
+      <span class="next-modal">❯</span>
+      <img class="image-modal-content" id="modalImage">
+    </div>
+    
+    
+    
+    
+
+    <section id="knowledge">
+      <div class="wrapper">
+        <header>
+          <h2>Conhecimentos</h2>
+        </header>
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/costura.png" alt="Ícone de Costura." style="max-width: 40px;"/>
+              <h3>Corte e Costura</h3>
+              <p>
+                Domínio das técnicas de corte e costura, desde o básico até
+                técnicas mais avançadas, como modelagem e criação de peças
+                próprias.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/cores.png" alt="Ícone de Cores." style="max-width: 40px;"/>
+
+              <h3>Teoria da Cor</h3>
+              <p>
+                Compreensão profunda da teoria da cor, incluindo harmonia de
+                cores, contrastes, efeitos psicológicos e aplicação prática na
+                criação de peças e paletas de cores.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/modelagem.png" alt="Ícone de Modelagem." style="max-width: 40px;"/>
+
+              <h3>Modelagem</h3>
+              <p>
+                Habilidades em modelagem, incluindo técnicas de moulage,
+                desenvolvimento de moldes e criação de peças sob medida.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/images/estilo.png" alt="Ícone de Estilos." style="max-width: 40px;"/>
+
+              <h3>Tendências e Estilos</h3>
+              <p>
+                Atualizado sobre as últimas tendências de moda, estilos
+                clássicos e a capacidade de identificar e aplicar elementos de
+                design para criar peças inovadoras.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Fale comigo!</h2>
+          </header>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="mailto: natalia02thompson@gmail.com" title="Enviar e-mail">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                      stroke="#00856F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 6L12 13L2 6"
+                      stroke="#00856F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  natalia02thompson@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+5511987888600" title="Fazer ligação"
+                  ><img
+                    src="./assets/icons/celular.svg"
+                    alt="Ícone de celular."
+                    id="cel"
+                  />
+                  +55 11 98788-8600</a
+                >
+              </li>
+            </ul>
+
+            <a
+              class="button"
+              title="Me chama no zap!"
+              href="https://api.whatsapp.com/send?phone=5511987888600&text=Fala,%20Natália!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z"
+                  fill="white"
+                />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img src="./assets/images/celular-2.png" alt="Ícone de celular." />
+        </div>
+      </div>
+    </section>
+
+    <a id="backToTopButton" title="Voltar ao topo" href="#home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home"> Natália Thompson </a>
+
+          <p>
+            Desenvolvido por 
+            <a href="https://github.com/dgirotto0" target="_blank">Daniel Girotto</a>. 
+          </p>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://instagram.com/nah_thompson"
+                title="Instagram"
+                target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/natália-thompson-821690314"
+                title="LinkedIn"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                    fill="rgba(255,255,255,1)"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toggle">
+      <input type="checkbox" id="sw-checkbox" />
+      <label for="sw-checkbox" title="Mudar tema">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+            fill="rgba(255,255,255,1)"
+          />
+        </svg>
+      </label>
+    </div>
+
+    <script type="module" src="./assets/js/main.js" defer></script>
+    <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>   
+    
+  </body>
+</html>
