@@ -42,18 +42,18 @@
 }
 
 .language-button.active img {
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid hsl(var(--hue), 92%, 50%); 
   border-radius: 50%; 
+
 }
 
-.language-button.active.top img {
-  border-color: black; 
+.language-button.active.scroll img {
+  border-color: var(--secundary-color);
 }
 
-.language-button.active.scrolled img {
-  border-color: white; 
+.typing-text::after {
+  content: '\00a0 '
 }
-
 
 .work {
   position: relative;
@@ -77,7 +77,7 @@
   font-size: 2rem;
   color: var(--headline);
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .prev-btn, .next-btn {
@@ -139,13 +139,25 @@
 }
 
 .img-wrapper img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
+  --a: 8deg; 
+  width: 300px;
+  height: 360px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  transform: perspective(1500px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+  -webkit-mask: 
+    linear-gradient(200deg,#000c 40%,#000,#000c 60%)
+    100% 100%/250% 250%;
+  transition: .4s;
   cursor: pointer;
 }
 
+.img-wrapper img:hover {
+  --i: -1;
+  -webkit-mask-position: 0 0;
+}
 #imageModal {
   position: fixed;
   top: 0;
@@ -263,7 +275,7 @@ body.light-mode {
 
 .wrapper {
   width: min(50rem, 100%);
-
+  padding-top: 4rem;
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -322,25 +334,18 @@ section span {
 .button {
   background: none;
   border: 0.2rem solid var(--primary-color);
-
-  margin-bottom: 6rem;
   padding: 1.4rem 3rem;
-
   width: fit-content;
-
   color: var(--primary-color);
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
-
   position: relative;
-
   transition: 400ms;
 }
 
@@ -459,6 +464,7 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5rem;
 }
 
 nav.scroll {
@@ -681,8 +687,7 @@ body.menu-expanded button path {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-
-  animation: flutuar 3s infinite backwards;
+  /*animation: flutuar 3s infinite backwards;*/
   position: relative;
 }
 
@@ -710,7 +715,7 @@ body.menu-expanded button path {
 
   position: absolute;
   bottom: -3.1rem;
-  z-index: -1;
+  z-index: 0;
 
   animation: appear 1s 500ms backwards;
 }
@@ -785,6 +790,10 @@ body.light-mode #home img#notebook-2-white {
 #about {
   text-align: left;
 }
+#about .wrapper {
+  grid-template-columns: auto;
+  padding-bottom: 4rem;
+}
 
 #about .content p {
   margin-block: 2.4rem;
@@ -796,12 +805,9 @@ body.light-mode #home img#notebook-2-white {
   font-weight: bold;
 }
 
-#about .col-a {
-  margin-bottom: 6rem;
-}
-
 #about .col-b {
   text-align: left;
+  align-content: center;
 }
 
 #about img {
@@ -1057,6 +1063,7 @@ body.light-mode #home img#notebook-2-white {
 
   padding: 1rem;
   border-radius: 0.8rem;
+  margin-bottom: 3rem;
 
   transition: 300ms;
 }
@@ -1525,9 +1532,8 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   /*===== ABOUT =======================================*/
 
   #about .wrapper {
-    grid-template-columns: 48rem 1fr;
     grid-template-areas: "B A";
-
+    grid-template-columns: auto;
     gap: 6.7rem;
   }
 
@@ -1537,6 +1543,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   #about .col-b {
     text-align: center;
+    align-content: center;
   }
 
   #about img:hover {
@@ -1633,6 +1640,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   .gallery.wrapper {
     grid-template-columns: 1fr;
   }
+  #about .content a:nth-child(2) {
+    margin-bottom: 3rem;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -1715,6 +1726,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   #about .content a:nth-child(2) {
     font-size: 1.4rem;
+    margin-bottom: 3rem;
   }
 
   /*===== PROJECTS ==================================*/
