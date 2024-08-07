@@ -1574,6 +1574,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 3rem;
   }
 
+  .img-wrapper img {
+    width: 410px;
+  }
+
   /*===== KNOWLEDGE =====================================*/
 
   #knowledge h2 {
