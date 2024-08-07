@@ -160,6 +160,7 @@
   --i: -1;
   -webkit-mask-position: 0 0;
 }
+
 #imageModal {
   position: fixed;
   top: 0;
@@ -1646,6 +1647,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     margin-bottom: 3rem;
   }
 
+  .img-wrapper img {
+    width: 390px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -1774,6 +1779,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
     bottom: -0.5rem;
   }
+
+  .img-wrapper img {
+    width: 330px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1817,6 +1826,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   #about .content a:nth-child(2) {
     font-size: 1.2rem;
+  }
+
+  .img-wrapper img {
+    width: 200px;
   }
 }
 
@@ -1889,6 +1902,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   #projects .card .buttons a {
     width: 4rem;
     height: 4rem;
+  }
+
+  .img-wrapper img {
+    width: 150px;
   }
 
   /*===== CONTACT ==================================*/
