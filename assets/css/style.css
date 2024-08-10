@@ -229,10 +229,6 @@
 .prev-modal {left: 3rem;}
 .next-modal {right: 3rem;}
 
-.prev-modal:hover, .next-modal:hover {
-  background-color: rgba(119, 57, 6, 0.607);
-}
-
 html {
   scroll-behavior: smooth;
 }
