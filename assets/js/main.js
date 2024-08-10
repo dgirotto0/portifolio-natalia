@@ -166,6 +166,7 @@ toggle.addEventListener("change", () => {
 
 let currentImages = [];
 let currentImageIndex = 0;
+let startX = 0; // Variável para armazenar a posição inicial do toque
 
 document.addEventListener('DOMContentLoaded', () => {
   const projects = document.querySelectorAll('.project');
@@ -181,12 +182,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  
   document.querySelector('.prev-modal').addEventListener('click', prevImage);
   document.querySelector('.next-modal').addEventListener('click', nextImage);
   document.addEventListener('keydown', handleKeyDown);
   document.getElementById('imageModal').addEventListener('click', closeModal);
-
+  
+  const modalImage = document.getElementById('modalImage');
+  modalImage.addEventListener('touchstart', handleTouchStart);
+  modalImage.addEventListener('touchmove', handleTouchMove);
+  
   setActiveLanguageButton();
 
   document.querySelectorAll('.language-button').forEach(button => {
@@ -220,6 +224,25 @@ function handleKeyDown(event) {
   } else if (event.key === 'ArrowRight') {
     nextImage();
   }
+}
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  if (!startX) return;
+
+  const currentX = event.touches[0].clientX;
+  const diffX = startX - currentX;
+
+  if (diffX > 0) {
+    nextImage();
+  } else {
+    prevImage();
+  }
+
+  startX = 0;
 }
 
 function openModal(images, index) {
