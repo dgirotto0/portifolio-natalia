@@ -24,14 +24,6 @@ processos criativos e as ferramentas utilizadas.
 - **Descrição Técnica dos Projetos**: Foco em detalhar os aspectos técnicos dos projetos de moda, sem perder a naturalidade e a fluidez na apresentação.
 - **Responsividade**: Layout adaptável a diferentes tamanhos de tela, garantindo uma boa experiência de usuário em dispositivos móveis e desktops.
 
-## Como Contribuir 🤝
-
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature (`git checkout -b feature/feature-name`).
-3. Commit suas alterações (`git commit -m 'Add some feature'`).
-4. Push para a branch (`git push origin feature/feature-name`).
-5. Abra um Pull Request.
-
 ## Licença 📜
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
